@@ -109,7 +109,7 @@ export default connect(
           <div>
             <h3 className="text-white text-2xl">
               <a className="hover:text-green-400" href="/">
-                AppName
+                Feedback
               </a>
               {pathnameMinusHomepage === "" ||
               pathnameMinusHomepage === "/" ? null : (

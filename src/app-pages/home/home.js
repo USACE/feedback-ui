@@ -1,7 +1,5 @@
 import React from "react";
 import Navbar from "../../app-components/navbar";
-import Card from "../../app-components/cards";
-import waterImage from "../../img/water.jpg";
 
 export default () => (
   <main>
@@ -20,27 +18,7 @@ export default () => (
       </div>
 
       <div className="container mt-24 mx-auto flex justify-around">
-        <Card
-          title="Card 1"
-          text="Card 1 Text"
-          img={waterImage}
-          imgAlt="Card 1 Image"
-          href="/#link1"
-        />
-        <Card
-          title="Card 2"
-          text="Card 2 Text"
-          img={waterImage}
-          imgAlt="Card 2 Image"
-          href="/#link2"
-        />
-        <Card
-          title="Card 3"
-          text="Card 3 Text"
-          img={waterImage}
-          imgAlt="Card 3 Image"
-          href="/#link3"
-        />
+        Welcome Home
       </div>
       <div className="container mx-auto mt-24">
         <p className="font-light text-center italic">Tagline</p>
