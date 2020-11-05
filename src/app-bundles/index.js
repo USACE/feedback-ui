@@ -4,9 +4,7 @@ import {
   createUrlBundle,
 } from "redux-bundler";
 
-import {
-  createNestedUrlBundle,
-} from "@corpsmap/corpsmap-bundles";
+import createNestedUrlBundle from "./create-nested-url-bundle";
 import createAuthBundle from "@corpsmap/create-auth-bundle";
 import pkg from "../../package.json";
 
@@ -34,6 +32,7 @@ export default composeBundles(
   createUrlBundle(),
   createNestedUrlBundle({
     pkg: pkg,
+    redirectOnLogout: pkg.homepage,
   }),
   routeBundle
 );
