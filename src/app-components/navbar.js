@@ -104,10 +104,10 @@ export default connect(
     });
 
     return (
-      <header className="h-18 bg-gray-800 sm:flex sm:justify-between sm:items-center sm:px-4 py-1">
+      <header className="h-18 bg-blue-600 sm:flex sm:justify-between sm:items-center sm:px-4 py-1">
         <div className="px-4 py-3 flex items-center justify-between px-4 py-3 ">
           <div>
-            <h3 className="text-white text-2xl">
+            <h4 style={{fontFamily: "Pacifico"}} className="text-white text-2xl">
               <a className="hover:text-green-400" href="/">
                 Feedback
               </a>
@@ -118,7 +118,7 @@ export default connect(
               <span className="font-light text-lg">
                 {pathnameMinusHomepage.split("/")[1]}
               </span>
-            </h3>
+            </h4>
           </div>
           <div className="sm:hidden">
             <button
@@ -143,11 +143,6 @@ export default connect(
           </div>
         </div>
         <nav className={dropdownClass}>
-          <NavItem href="/#link1">NavLink1</NavItem>
-          <NavItem href="/#link2">NavLink2</NavItem>
-          {authIsLoggedIn ? (
-            <NavItem href="/#admin">LinkWhenLoggedIn</NavItem>
-          ) : null}
           <LoginDropdown />
         </nav>
       </header>
